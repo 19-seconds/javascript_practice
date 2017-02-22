@@ -105,17 +105,58 @@
   // }
   // cool();
 
-  var car = {
-    model: "Mercedes",
-    year: 2017,
-    miles: 50,
-    printMessage: function() {
-      return this.model + " has done " + this.miles + " miles.";
+  // var car = {
+  //   model: "Mercedes",
+  //   year: 2017,
+  //   miles: 50,
+  //   printMessage: function() {
+  //     return this.model + " has done " + this.miles + " miles.";
+  //   }
+  // };
+
+  // for (var i = 1; i <= 100 ; i++) {
+  //   if (i % 15 === 0) {
+  //     console.log("FizzBuzz");
+  //   } else if (i % 5 === 0) {
+  //     console.log("Buzz");
+  //   } else if  (i % 3 === 0) {
+  //     console.log("Fizz");
+  //   } else {
+  //     console.log(i);
+  //   }
+    
+  // }
+
+  // for (var i = 1; i <= 100; i++) {
+  //   var expletive = '';
+  //   if (i % 3 === 0) expletive += 'Fizz';
+  //   if (i % 5 === 0) expletive += 'Buzz';
+  //   console.log(expletive || i);
+  // }
+
+
+  function average(numbers) {
+    var sum = 0;
+    for (var i = 0;i < numbers.length; i++) {
+      sum = sum + numbers[i];
+    }
+    var average = sum / numbers.length; 
+    return average;
+  }
+
+  var numbers = [5, 23, 98, 234, 1, 0, 3, 177];
+  console.log(average(numbers));
+
+  book = {
+    title: "Moby Dick",
+    author: "Herman Meville",
+    isbn: "978-0553213119",
+    pages: 704,
+    publication: 1981,
+    printDetails: function() {
+      console.log("Title: " + this.title + " Author: " + this.author + " ISBN: " + this.isbn + " Pages: " + this.pages + " Publication: " + this.publication)
     }
   };
-
-
-
 
 
 </script>
